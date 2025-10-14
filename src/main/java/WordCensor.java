@@ -11,7 +11,7 @@ public class WordCensor {
         String censored3 = censored2.replace("oops",  "***");
         String censored4 = censored3.replace("yikes",  "***");
 
-        System.out.print(censored4);
+        System.out.print("Censored: " + censored4);
 
         // TODO: Replace each banned word with exactly ***: dang, nuts, oops, yikes
 
