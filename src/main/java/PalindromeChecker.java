@@ -2,7 +2,25 @@ import java.util.Scanner;
 
 public class PalindromeChecker {
     public static void main(String[] args) {
-        // TODO: Create a Scanner and read a full line from the user with nextLine().
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a word: ");
+        String ogWord = sc.nextLine();
+
+        String lcWord = ogWord.toLowerCase();
+
+        String revWord = new StringBuilder(lcWord).reverse().toString();
+
+        if (lcWord.equals(revWord))
+            System.out.println(ogWord + " is a palindrome!");
+        else
+            System.out.println(ogWord + " is NOT a palindrome.");
+    }
+}
+
+
+
+// TODO: Create a Scanner and read a full line from the user with nextLine().
         //       Keep the original input string so you can print it in the final message.
 
         // TODO: Build a lowercase version of the input for checking (case-insensitive comparison).
@@ -17,5 +35,4 @@ public class PalindromeChecker {
         //       "<original> is a palindrome"
         //       "<original> is not a palindrome"
         //       where <original> is exactly what the user typed (preserve casing).
-    }
-}
+
